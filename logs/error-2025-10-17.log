@@ -1,0 +1,11 @@
+2025-10-17 12:07:37 [ERROR]: Caught an error during testing {
+  "error": "This is a test error",
+  "stack": "Error: This is a test error\n    at logger (/media/rohith/New Volume/rohith/MakeUEasy/e-commerce_website/test-logger.ts:25:9)\n    at Object.<anonymous> (/media/rohith/New Volume/rohith/MakeUEasy/e-commerce_website/test-logger.ts:70:66)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object.transformer (/media/rohith/New Volume/rohith/MakeUEasy/e-commerce_website/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at cjsLoader (node:internal/modules/esm/translators:309:5)\n    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:202:7)"
+}
+2025-10-17 12:07:37 [ERROR]: This is a custom error {
+  "code": "TEST_ERROR",
+  "details": {
+    "userId": 123,
+    "action": "test"
+  }
+}

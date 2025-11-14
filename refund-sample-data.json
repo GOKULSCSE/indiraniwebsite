@@ -1,0 +1,90 @@
+Received Razorpay webhook: refund.created
+{"account_id":"acc_QI3hdyvXBhZsoY","contains":["refund","payment"],"created_at":1749727696,"entity":"event","event":"refund.created","payload":{"payment":{"entity":{"acquirer_data":{"rrn":"483835539811","upi_transaction_id":"9CFDCC947B88A3278D861081F0125636"},"amount":32100,"amount_refunded":32100,"amount_transferred":0,"bank":null,"base_amount":32100,"captured":true,"card_id":null,"contact":"+919999999999","created_at":1749713253,"currency":"INR","description":"Test Transaction","email":"johndoe@example.com","entity":"payment","error_code":null,"error_description":null,"error_reason":null,"error_source":null,"error_step":null,"fee":758,"id":"pay_QgCaFs4F2S7OZV","international":false,"invoice_id":null,"method":"upi","notes":[],"order_id":"order_QgCZynJaCCIjnt","refund_status":"full","status":"refunded","tax":116,"upi":{"vpa":"test@123"},"vpa":"test@123","wallet":null}},"refund":{"entity":{"acquirer_data":{"rrn":null},"amount":32100,"batch_id":null,"created_at":1749727692,"currency":"INR","entity":"refund","id":"rfnd_QgGgTAMftuCN9a","notes":{"comment":""},"payment_id":"pay_QgCaFs4F2S7OZV","receipt":null,"speed_processed":"normal","speed_requested":"optimum","status":"processed"}}}}
+ POST /api/razorpay/refundwebhook 200 in 575ms
+{}
+Received Razorpay webhook: refund.processed
+{"account_id":"acc_QI3hdyvXBhZsoY","contains":["refund","payment"],"created_at":1749727696,"entity":"event","event":"refund.processed","payload":{"payment":{"entity":{"acquirer_data":{"rrn":"483835539811","upi_transaction_id":"9CFDCC947B88A3278D861081F0125636"},"amount":32100,"amount_refunded":32100,"amount_transferred":0,"bank":null,"base_amount":32100,"captured":true,"card_id":null,"contact":"+919999999999","created_at":1749713253,"currency":"INR","description":"Test Transaction","email":"johndoe@example.com","entity":"payment","error_code":null,"error_description":null,"error_reason":null,"error_source":null,"error_step":null,"fee":758,"id":"pay_QgCaFs4F2S7OZV","international":false,"invoice_id":null,"method":"upi","notes":[],"order_id":"order_QgCZynJaCCIjnt","refund_status":"full","status":"refunded","tax":116,"upi":{"vpa":"test@123"},"vpa":"test@123","wallet":null}},"refund":{"entity":{"acquirer_data":{"rrn":null},"amount":32100,"batch_id":null,"created_at":1749727692,"currency":"INR","entity":"refund","id":"rfnd_QgGgTAMftuCN9a","notes":{"comment":""},"payment_id":"pay_QgCaFs4F2S7OZV","receipt":null,"speed_processed":"normal","speed_requested":"optimum","status":"processed"}}}}
+ POST /api/razorpay/refundwebhook 200 in 78ms
+{}
+Received Razorpay webhook: refund.speed_changed
+Unhandled event type: refund.speed_changed
+ POST /api/razorpay/refundwebhook 200 in 88ms
+
+
+
+
+PAYMENT INFO
+Payment authorized: {
+    id: 'pay_QgGvVX4JyVwJL2',
+    entity: 'payment',
+    amount: 31000,
+    currency: 'INR',
+    status: 'authorized',
+    order_id: 'order_QgGsQvCFi5Om2r',
+    invoice_id: null,
+    international: false,
+    method: 'upi',
+    amount_refunded: 0,
+    refund_status: null,
+    captured: false,
+    description: 'Test Transaction',
+    card_id: null,
+    bank: null,
+    wallet: null,
+    vpa: 'test@123',
+    email: 'johndoe@example.com',
+    contact: '+919999999999',
+    notes: [],
+    fee: null,
+    tax: null,
+    error_code: null,
+    error_description: null,
+    error_source: null,
+    error_step: null,
+    error_reason: null,
+    acquirer_data: {
+      rrn: '178271757362',
+      upi_transaction_id: '6E1F1BD0FC4F13A8B0EFC9B328883809'
+    },
+    created_at: 1749728547,
+    upi: { vpa: 'test@123' }
+  }
+  {}
+  Received Razorpay webhook: payment.captured
+  Payment captured: {
+    id: 'pay_QgGvVX4JyVwJL2',
+    entity: 'payment',
+    amount: 31000,
+    currency: 'INR',
+    status: 'captured',
+    order_id: 'order_QgGsQvCFi5Om2r',
+    invoice_id: null,
+    international: false,
+    method: 'upi',
+    amount_refunded: 0,
+    refund_status: null,
+    captured: true,
+    description: 'Test Transaction',
+    card_id: null,
+    bank: null,
+    wallet: null,
+    vpa: 'test@123',
+    email: 'johndoe@example.com',
+    contact: '+919999999999',
+    notes: [],
+    fee: 732,
+    tax: 112,
+    error_code: null,
+    error_description: null,
+    error_source: null,
+    error_step: null,
+    error_reason: null,
+    acquirer_data: {
+      rrn: '178271757362',
+      upi_transaction_id: '6E1F1BD0FC4F13A8B0EFC9B328883809'
+    },
+    created_at: 1749728547,
+    reward: null,
+    upi: { vpa: 'test@123' },
+    base_amount: 31000
+  }

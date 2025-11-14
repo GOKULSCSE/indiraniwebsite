@@ -1,0 +1,11 @@
+testing
+Access key: AKIAWASZSJKGZD2IWWCG
+Secret access key : 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
+
+rds logins
+----------
+user name: ecommerce
+db name : ecommerce
+password : admin123456
+enpoint : ecommerce.cw7oeu2q8mnh.us-east-1.rds.amazonaws.com
+port : 5432

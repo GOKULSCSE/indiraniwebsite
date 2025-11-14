@@ -1,0 +1,13 @@
+image: atlassian/default-image:3
+
+pipelines:
+  default:
+    - step:
+        name: Deploy to EC2 Instance
+        script:
+          - mkdir -p ~/.ssh
+          - echo "$SSH_KEY_BASE64" | base64 -d > ~/.ssh/id_rsa
+          - chmod 600 ~/.ssh/id_rsa
+          - ssh-keyscan -H 35.174.236.46 >> ~/.ssh/known_hosts
+          - ssh -i ~/.ssh/id_rsa ubuntu@35.174.236.46 "cd /home/ubuntu/e-commerce_website && git pull origin main"
+

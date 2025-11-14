@@ -1,0 +1,133 @@
+// Create Product
+{
+  sellerId: string;
+  categoryId: string;
+  name: string;
+  description?: string;
+  aboutProduct?: object;
+  isApproved?: boolean;
+  images?: {
+    imageUrl: string;
+    isPrimary?: boolean;
+  }[];
+  variants: {
+    title: string;
+    description?: string;
+    price: number;
+    stockQuantity: number;
+    variantType: string;
+    variantValue: string;
+    additionalPrice: number;
+  }[];
+  discounts?: {
+    discountType: "percentage" | "amount";
+    discountValue: number;
+    startDate: string | Date;
+    endDate: string | Date;
+  }[];
+}
+
+// Update Product
+{
+  categoryId?: string;
+  name?: string;
+  description?: string;
+  aboutProduct?: object;
+  isApproved?: boolean;
+}
+
+// Add Product Variant
+{
+  productId: string;
+  title: string;
+  description?: string;
+  price: number;
+  stockQuantity: number;
+  variantType: string;
+  variantValue: string;
+  additionalPrice: number;
+}
+
+// Update Product Variant
+{
+  id: string;
+  productId: string;
+  title: string;
+  description?: string;
+  price: number;
+  stockQuantity: number;
+  variantType: string;
+  variantValue: string;
+  additionalPrice: number;
+}
+
+// Add to Cart
+{
+  userId: string;
+  items: {
+    productVariantId: string;
+    quantity: number;
+  }[];
+}
+
+// Update Cart Item
+{
+  id: string; //cart item id
+  cartId?: string;cart id
+  productVariantId: string;
+  quantity: number;
+}
+
+// Add to Wishlist
+{
+  userId: string;
+  items: {
+    productVariantId: string;
+  }[];
+}
+
+// Remove from Wishlist
+{
+  ids: string[];
+}
+
+
+
+// Create Order
+{
+    userId: string;
+    totalAmount: number;
+    orderStatus?: "pending" | "approved" | "rejected";
+    paymentStatus?: "pending" | "authorized" | "paid" | "failed" | "refunded";
+    shippingAddressId: string;
+    items: {
+      productVariantId: string;
+      sellerId: string;
+      quantity: number;
+      priceAtPurchase: number;
+    }[];
+    payments?: {
+      paymentGateway: string;
+      paymentStatus: "pending" | "authorized" | "completed" | "failed" | "refunded";
+      paymentGatewayOrderId?: string;
+      transactionId?: string;
+      amount: number;
+      paymentDate?: Date;
+    }[];
+  }
+  
+  // Update Order
+  {
+    id: string;
+    orderStatus?: "pending" | "approved" | "rejected";
+    paymentStatus?: "pending" | "authorized" | "paid" | "failed" | "refunded";
+    shippingAddressId?: string;
+  }
+  
+  // Update Seller Order Status
+  {
+    id: string;
+    status: "pending" | "shipped" | "delivered" | "cancelled";
+  }
+
+

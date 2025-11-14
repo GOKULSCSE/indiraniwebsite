@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/media/rohith/New Volume/rohith/MakeUEasy/e-commerce_website/logs/.ead04a2f275afe47c8ff8704944396ee2124b9b2-audit.json",
+    "files": [
+        {
+            "date": 1760683057359,
+            "name": "/media/rohith/New Volume/rohith/MakeUEasy/e-commerce_website/logs/application-2025-10-17.log",
+            "hash": "e49be00159b4d964e3b57698860dabc0923763869dd8af86e72cce4014e09d2d"
+        }
+    ],
+    "hashType": "sha256"
+}

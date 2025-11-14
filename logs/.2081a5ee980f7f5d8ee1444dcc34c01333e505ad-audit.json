@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/media/rohith/New Volume/rohith/MakeUEasy/e-commerce_website/logs/.2081a5ee980f7f5d8ee1444dcc34c01333e505ad-audit.json",
+    "files": [
+        {
+            "date": 1760683057362,
+            "name": "/media/rohith/New Volume/rohith/MakeUEasy/e-commerce_website/logs/rejections-2025-10-17.log",
+            "hash": "92c2665f7591874dd28740b45185310ab02dbcb0d45790cb63edfa63e7d0243f"
+        },
+        {
+            "date": 1761191996039,
+            "name": "/media/rohith/New Volume/rohith/MakeUEasy/e-commerce_website/logs/rejections-2025-10-23.log",
+            "hash": "32979628658be42db65da1af30168f9ad26d34da34a0c25c4dda0d457f2711c8"
+        },
+        {
+            "date": 1762340685070,
+            "name": "/media/rohith/New Volume/rohith/MakeUEasy/e-commerce_website/logs/rejections-2025-11-05.log",
+            "hash": "f0633984d55474df650315d72b663954184495ac5ecf1b7053f5418d5517b7be"
+        }
+    ],
+    "hashType": "sha256"
+}
